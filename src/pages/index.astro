@@ -11,40 +11,94 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polished Web Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #faf9f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #f0eceb;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 { margin: 0; font-weight: 600; }
+
+        header p { margin-top: 8px; color: #666; }
+
+        main {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            background-color: #f0eceb;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+
+
+
+<header>
+    <h1>Welcome to The Homepage</h1>
+    <p>It Has All Of My Cool Projects</p>
+</header>
+
+<main>
+    <h2>WIP</h2>
+    <p>Gotta ask Ai before I add anything else.</p>
+
+    <div class="card">
+        <h3>About Me</h3>
+        <p>There is not much more to me then this page.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Quick Links</p>
+    <div class="links">
+        <a href="https://zimaos.duletbodged.com" target="_blank">Zima</a>
+        <a href="https://olama.duletbodged.com" target="_blank">Olama</a>
+        <a href="https://jellyfin.duletbodged.com" target="_blank">Jellyfin</a>
+    </div>
+</footer>
+
+
+</body>
 </html>
